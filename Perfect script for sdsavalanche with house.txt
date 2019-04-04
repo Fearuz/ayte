@@ -1,0 +1,79 @@
+///bp setup///
+///bp 1: Store (potions)
+///bp 2: Food (ground)
+///bp 3: Blanks (on person)
+///bp 4: Blanks (ground)
+
+/// Instructions~
+/// Must have 1024 x 768 display
+/// Must have bps / health bar set like this - https://gyazo.com/2178b83f594c39d357d9e5718ddb9c24
+/// Mana key set to F2 (small manas or whatever cask you choose)
+/// Rune key set to F4
+
+///Script - Do not touch below///
+set linedelay 300
+
+/// Use cask small, strong, big, ultimate (works with gold converter next in inventory
+
+if 875, 412 40529
+kright 429, 251 abs
+end_if
+
+/// Use rune ( Requires above 100 soul)
+
+if 867, 283 11976635  and 905, 139 16740724
+send F4
+end_if
+
+/// Use manas for rune
+
+if 915, 138 6905433
+send F2
+wait 200
+send F2
+wait 200
+send F2
+wait 200
+send F2
+end_if
+
+/// Drag sds/ava to floor ( customizable, ask for help if need, depends the house.)
+
+if 871, 537 9000237
+kleft_down 871, 560 abs
+wait 200
+kleft_up 373, 396 abs
+end_if
+
+if 877, 532 263173
+kleft_down 877, 555 abs
+wait 200
+kleft_up 471, 394 abs
+end_if
+
+/// Pickup blank runes
+
+if 874, 536 2894892
+kleft_down 879, 620 abs
+wait 200
+kleft_up 874, 559 abs
+end_if
+
+/// Open next bps(rune bps/ food bps)
+
+ if 878, 478 8298933
+ kright 878, 501 abs
+ end_if
+
+if  879, 598 8298933
+kright 879, 621 abs
+end_if
+
+/// Eat food (Fish and ham)
+
+if 875, 473 7106393
+kright 875, 496 abs
+else if 877, 474 11524312
+kright  877, 497 abs
+end_if
+end_if
