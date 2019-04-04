@@ -1,0 +1,29 @@
+proc loot
+
+set #aa findcolor (344 170 417 175 1 1 (15790320 ) %arr ) ///loot msg
+if #aa > 0 and 13, 27 4474180
+kright 450, 200 abs
+wait 20
+kright 455, 169 abs
+wait 20
+kright 486, 170 abs
+wait 20
+kright 519, 171 abs
+wait 20
+kright 518, 204 abs
+wait 20
+kright 516, 236 abs
+wait 20
+kright 488, 236 abs
+wait 20
+kright 458, 236 abs
+wait 4500
+
+else
+if_not 13, 27 4474180
+wait 400
+end_if
+end_if
+end_proc
+
+call loot

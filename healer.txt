@@ -1,0 +1,18 @@
+if_not 1077, 123 4210880
+    send f1
+    end_if
+
+if_not 1039, 124 5197787
+    send f3
+    end_if
+
+if_not 1080, 136 7621174
+    send f1
+    end_if
+
+set #aab findcolor (985 290 1089 302 1 1 (9426166 ) %arr ) /// Finding green check mark ( if not on it)
+if #aab > 0
+Send f6
+wait 20
+send f6
+end_if

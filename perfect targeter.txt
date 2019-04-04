@@ -1,0 +1,26 @@
+              Proc targloot
+set #aazef findcolor (5 16 25 100 1 1 ("220", "178", "255", "139", "8421631" ) %arr )
+if #aazef > 0 //color is found on battlelist already attacked
+wait 40
+else
+goto targ
+:targ
+set #aaze findcolor (27 31 153 198 1 1 ("49152", "6340704", "3158208", "49344", "96","192" ) %arr )
+if #aaze > 0 // if color is found
+wait 100
+move %arr [1 1] %arr [1 2] // move the cursor to the first color found
+wait 40
+kleft %arr [1 1] %arr [1 2] // move the cursor to the first color found
+wait 10
+wait 150
+
+end_if
+end_if
+end_if
+end_if
+end_if
+end_if
+end_proc
+
+
+call targloot
